@@ -321,15 +321,18 @@ img { display: block; width: 100%; }
   padding: 0 15px;
   border: 0;
   background: rgba(251,250,247,.96);
+  color: var(--ink);
   cursor: pointer;
   font-size: 8px;
+  font-weight: 600;
   letter-spacing: .13em;
-  opacity: 0;
-  transform: translateY(6px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity .2s ease, transform .2s ease;
 }
 .quick-add span { font-size: 17px; }
-.product-card:hover .quick-add, .quick-add:focus-visible { opacity: 1; transform: translateY(0); }
+.quick-add:hover { background: white; }
+.quick-add:focus-visible { outline: 2px solid var(--wine); outline-offset: 2px; }
 .product-info { padding: 14px 0 0; display: flex; justify-content: space-between; gap: 9px; }
 .product-info h3 { margin: 0; font-size: 11px; font-weight: 500; }
 .product-info p { margin: 6px 0 0; color: #868178; font-size: 9px; }
